@@ -1,24 +1,19 @@
 var chat = document.createElement('div');
 
-var iframe = document.createElement('iframe');
-iframe.style.display = "none"
-iframe.style.position = "fixed"
-iframe.src = "localhost:8000"
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+
 
 var a = document.createElement('a');
 a.innerText = "chat";
-a.onclick = function() {
-    if (iframe.style.display === "none") {
-        iframe.style.display = "block"
-    } else if (iframe.style.display === "block") {
-        iframe.style.display = "none"
-    }
-}
+a.href = "JavaScript:newPopup('http://localhost:8000');"
 
 document.getElementById('topBar').childNodes[23].remove()
 
 document.getElementById('topBar').childNodes[24].remove()
 
 document.getElementById('topBar').appendChild(chat);
-document.body.append(iframe);
+
 chat.append(a)
