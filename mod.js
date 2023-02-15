@@ -1,0 +1,19 @@
+var chat = document.createElement('div');
+chat.className = 'listing'
+
+var iframe = document.createElement('iframe');
+iframe.style.display = "none"
+
+var a = document.createElement('a');
+a.className = 'option smallFancyButton'
+a.onclick = function() {
+    if (iframe.style.display === "none") {
+        iframe.style.display = "block"
+    } else if (iframe.style.display === "block") {
+        iframe.style.display = "none"
+    }
+}
+
+chat.append(document.getElementsByClassName('subsection')[0]);
+document.body.append(iframe);
+a.append(chat)
