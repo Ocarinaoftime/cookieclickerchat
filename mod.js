@@ -2,6 +2,7 @@ var chat = document.createElement('div');
 
 var iframe = document.createElement('iframe');
 iframe.style.display = "none"
+iframe.style.position = "fixed"
 iframe.src = "localhost:8000"
 
 var a = document.createElement('a');
