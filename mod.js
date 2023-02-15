@@ -1,5 +1,4 @@
 var chat = document.createElement('div');
-chat.className = 'listing'
 
 var iframe = document.createElement('iframe');
 iframe.style.display = "none"
@@ -16,6 +15,6 @@ a.onclick = function() {
     }
 }
 
-document.getElementsByClassName('subsection')[0].appendChild(chat);
+document.getElementById('topBar').appendChild(chat);
 document.body.append(iframe);
 chat.append(a)
