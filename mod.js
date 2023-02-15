@@ -3,6 +3,7 @@ chat.className = 'listing'
 
 var iframe = document.createElement('iframe');
 iframe.style.display = "none"
+iframe.src = "localhost:8000"
 
 var a = document.createElement('a');
 a.className = 'option smallFancyButton'
