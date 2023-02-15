@@ -1,0 +1,1 @@
+Clone this repo locally. Run a php local web server. Ask your friends on the same network or use ngrok to add the mod and enjoy!
