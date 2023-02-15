@@ -15,6 +15,6 @@ a.onclick = function() {
     }
 }
 
-chat.append(document.getElementsByClassName('subsection')[0]);
+document.getElementsByClassName('subsection')[0].append(chat);
 document.body.append(iframe);
-a.append(chat)
+chat.append(a)
